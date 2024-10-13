@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nested Comment</title>
+</head>
+<body>
+    <!-- Main Container for Comment Section -->
+    <main class="comment-section" id="comment-section">
+
+        <!-- Comment Form -->
+        <div class="comment-form">
+            <!-- Text area for entering a new comment -->
+            <textarea required class="comment-text-area" id="comment-text-area" placeholder="Write Your Comment Here"></textarea>
+            <!-- Button to submit a new comment -->
+            <button class="comment-btn" id="comment-btn">Comment</button>
+        </div>
+
+        <!-- Heading for Comments (hidden initially) -->
+        <h1 class="comment-heading" id="comment-heading">Comments</h1>
+
+        <!-- Collection of Comments -->
+        <div class="comment-collection" id="comment-collection">
+            <!-- Comments will be dynamically added here -->
+        </div>
+
+    </main>
+</body>
+<script src="script.js"></script> <!-- JavaScript for comment functionality -->
+</html>

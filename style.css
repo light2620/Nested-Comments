@@ -1,0 +1,144 @@
+/* Reset styles for padding, margin, and box sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container Styling */
+main {
+    width: 90%;
+    height: 95vh;
+    max-width: 800px;
+    margin: 1em auto;
+    padding: 1em;
+    overflow: auto; /* Enables scrolling within the container */
+    background-color: #352f44;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Comment Form Styling */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Comment Heading (hidden by default) */
+.comment-heading {
+    display: none; /* Hidden initially */
+    color: #fcfefe;
+    text-align: center;
+}
+
+/* Comment Text Area */
+.comment-text-area {
+    resize: none; /* Prevent resizing */
+    height: 100px;
+    padding: .5em;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.comment-text-area:focus {
+    outline: none; /* Removes the outline when focused */
+}
+
+.comment-text-area::placeholder {
+    font-size: 1.5rem; /* Placeholder text styling */
+}
+
+/* Comment Button Styling */
+.comment-btn {
+    width: 100px;
+    font-size: 1rem;
+    color: white;
+    padding: .5em;
+    background-color: #0092ca;
+    border: none;
+    border-radius: 3px;
+    align-self: flex-end; /* Aligns button to the right */
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* Comment Box Container */
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5em;
+    background-color: #ff6f3c;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px, rgba(14, 30, 37, 0.32) 0px 2px 16px;
+    align-items: center;
+    padding: .5em;
+    gap: 6px; /* Space between comment and reply */
+}
+
+/* Individual Comment */
+.comment {
+    background-color: white;
+    width: 98%;
+    border: none;
+    border-radius: 3px;
+    padding: .5em;
+    font-size: 1.5rem;
+    height: 10vh; /* Fixed height */
+}
+
+/* Comment Collection Container */
+.comment-collection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    overflow: auto; /* Allows scrolling if comments overflow */
+}
+
+/* Reply Button */
+.reply {
+    align-self: flex-end;
+    margin-right: 1em;
+    color: white;
+}
+
+.reply:hover {
+    cursor: pointer;
+    color: rgb(231, 224, 224); /* Changes color on hover */
+}
+
+/* Reply Container */
+.replyDiv {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: flex-end; /* Aligns to the right */
+    gap: 10px; /* Space between reply textarea and button */
+}
+
+/* Reply Text Area */
+.reply-text-area {
+    resize: none; /* Prevent resizing */
+    width: 79%;
+    padding: .5em;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.reply-text-area:focus {
+    outline: none;
+}
+
+.reply-text-area::placeholder {
+    font-size: 1rem; /* Placeholder text styling */
+}
+
+/* Reply Button */
+.reply-btn {
+    background-color: #0092ca;
+    width: 10%;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: .5em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
